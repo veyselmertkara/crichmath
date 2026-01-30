@@ -56,7 +56,6 @@ menu:
       name: Differential Equations
       url: /categories/differential-equations/
       weight: 40
-
     - identifier: foundations
       name: Foundations of Mathematical Reasoning
       url: /categories/foundations-of-mathematical-reasoning/
