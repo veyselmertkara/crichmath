@@ -21,11 +21,7 @@ params:
     Title: "CrichMath" # Listenin tepesindeki büyük başlık
     Content: "Lisans seviyesinde teorem ispatları, ders notları ve analizler." # Altındaki gri açıklama
 
-  # --- SOSYAL İKONLAR (Sadece GitHub yeterli olur bu konseptte) ---
-  socialIcons:
-    - name: github
-      url: "https://github.com/veyselmertkara/math-blog"
-      title: "Github"
+  socialIcons: []
   # --- YAZI DETAYLARI ---
   # --- YAZI DETAYLARI ---
   ShowReadingTime: false    # Okuma süresi kalsın mı? (İstersen bunu da false yapabilirsin)
