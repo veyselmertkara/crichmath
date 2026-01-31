@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Posts | CrichMath</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - CrichMath">
-<meta name="author" content="Selim Kaan Ozsoy">
-<link rel="canonical" href="//localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5fbd81e39ffbd9c2dea902ec40c401afb8ca23bcb962ad83ba430509e258f226.css" integrity="sha256-X72B45/72cLeqQLsQMQBr7jKI7y5Yq2DukMFCeJY8iY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="//localhost:1313/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/">
-<noscript>
+<head>
+  <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <title>Posts | CrichMath</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Posts - CrichMath">
+  <meta name="author" content="Selim Kaan Ozsoy">
+  <link rel="canonical" href="//localhost:1313/posts/">
+  <link crossorigin="anonymous"
+    href="/assets/css/stylesheet.f4ebdef69328a996016c894c2e7c7f0648d69a0cdf5e1d5985a9c37a94b30987.css"
+    integrity="sha256-9Ove9pMoqZYBbIlMLnx/BkjWmgzfXh1ZhanDepSzCYc=" rel="preload stylesheet" as="style">
+  <link rel="icon" href="//localhost:1313/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+  <link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+  <meta name="theme-color" content="#2e2e33">
+  <meta name="msapplication-TileColor" content="#2e2e33">
+  <link rel="alternate" type="application/rss+xml" href="//localhost:1313/posts/index.xml" title="rss">
+  <link rel="alternate" hreflang="en" href="//localhost:1313/posts/">
+  <noscript>
     <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
+      #theme-toggle,
+      .top-link {
+        display: none;
+      }
     </style>
     <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --theme: rgb(29, 30, 32);
+          --entry: rgb(46, 46, 51);
+          --primary: rgb(218, 218, 219);
+          --secondary: rgb(155, 156, 157);
+          --tertiary: rgb(65, 66, 68);
+          --content: rgb(196, 196, 197);
+          --code-block-bg: rgb(46, 46, 51);
+          --code-bg: rgb(55, 56, 62);
+          --border: rgb(51, 51, 51);
+          color-scheme: dark;
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
+        .list {
+          background: var(--theme);
         }
 
+        .toc {
+          background: var(--entry);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        .list::-webkit-scrollbar-thumb {
+          border-color: var(--code-bg);
+        }
+      }
     </style>
-</noscript>
-<script>
+  </noscript>
+  <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
+      document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
+      document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
+      document.querySelector("html").dataset.theme = 'dark';
     } else {
-        document.querySelector("html").dataset.theme = 'light';
+      document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-    onload="renderMathInElement(document.body, {
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
         delimiters: [
             {left: '$$', right: '$$', display: true},
             {left: '$', right: '$', display: false},
@@ -82,20 +84,20 @@
             {left: '\\[', right: '\\]', display: true}
         ]
     });">
-</script>
+    </script>
 
-<meta property="og:url" content="//localhost:1313/posts/">
+  <meta property="og:url" content="//localhost:1313/posts/">
   <meta property="og:site_name" content="CrichMath">
   <meta property="og:title" content="Posts">
   <meta property="og:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
   <meta property="og:locale" content="tr-tr">
   <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
 
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -110,308 +112,409 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    <header class="header">
+  <header class="header">
     <nav class="nav">
-        <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="CrichMath (Alt + H)">CrichMath</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+      <div class="logo">
+        <a href="//localhost:1313/" accesskey="h" title="CrichMath (Alt + H)">CrichMath</a>
+        <div class="logo-switches">
+          <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+
+          <button id="menu-trigger" aria-label="Menu" style="display: none; margin-left: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="//localhost:1313/categories/calculus-i/" title="Advanced Calculus">
-                    <span>Advanced Calculus</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/categories/calculus-ii/" title="Multivariable Calculus">
-                    <span>Multivariable Calculus</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/categories/elementary-number-theory/" title="Elementary Number Theory">
-                    <span>Elementary Number Theory</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/categories/differential-equations/" title="Differential Equations">
-                    <span>Differential Equations</span>
-                </a>
-            </li>
-            <li>
-                <a href="//localhost:1313/categories/foundations-of-mathematical-reasoning/" title="Foundations of Mathematical Reasoning">
-                    <span>Foundations of Mathematical Reasoning</span>
-                </a>
-            </li>
-        </ul>
+      </div>
+      <ul id="menu">
+        <li>
+          <a href="//localhost:1313/categories/calculus-i/" title="Advanced Calculus">
+            <span>Advanced Calculus</span>
+          </a>
+        </li>
+        <li>
+          <a href="//localhost:1313/categories/calculus-ii/" title="Multivariable Calculus">
+            <span>Multivariable Calculus</span>
+          </a>
+        </li>
+        <li>
+          <a href="//localhost:1313/categories/elementary-number-theory/" title="Elementary Number Theory">
+            <span>Elementary Number Theory</span>
+          </a>
+        </li>
+        <li>
+          <a href="//localhost:1313/categories/differential-equations/" title="Differential Equations">
+            <span>Differential Equations</span>
+          </a>
+        </li>
+        <li>
+          <a href="//localhost:1313/categories/foundations-of-mathematical-reasoning/"
+            title="Foundations of Mathematical Reasoning">
+            <span>Foundations of Mathematical Reasoning</span>
+          </a>
+        </li>
+      </ul>
     </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="//localhost:1313/">Home</a></div>
-  <h1>
-    Posts
-  </h1>
-</header>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Strong Induction
-    </h2>
   </header>
-  <div class="entry-content">
-    <p> Theorem.(Strong Induction) Let $\phi(n)$ be a property of natural numbers. Suppose that $\phi(1)$ holds and for all $n \in \mathbb{N}$, if $\phi(1)$, $\phi(2)$, $\dots$, $\phi(n)$ hold, then $\phi(n&#43;1)$ holds. Then $\phi(n)$ holds for all $n \in \mathbb{N}$.
-Also, we can express this theorem in a similar way to what we did in the previous note as follows:
-Let $S \subseteq \mathbb{N}$. If
-1. $1 \in S$
-2. If $k \in S$, and $\{1,2,3, \dots, k\} \subseteq S$, then $k&#43;1 \in S$
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-30 21:28:00 +0300 +03'>January 30, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Strong Induction" href="//localhost:1313/posts/strong/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Foundations of Mathematical Reasoning
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Mathematics is not only a collection of formulas and computations, but also a discipline built upon precise reasoning. Before engaging with advanced mathematical structures, it is essential to understand the logical foundations that govern how mathematical statements are formed, interpreted, and justified. This section is devoted to developing that foundational perspective.
-We begin with the classical roots of logic, tracing the basic principles of reasoning back to Aristotle’s formulation of logical laws. From there, we study propositional logic: logical connectives, compound statements, and truth tables, which provide a concrete and systematic way to analyze the validity of logical expressions. These tools allow us to determine when statements are true, false, or logically equivalent, independent of any particular mathematical context.
-Building on this framework, we turn to methods of proof, which form the backbone of mathematical practice. Direct proofs, proof by contradiction, contrapositive arguments.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-30 20:59:00 +0300 +03'>January 30, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Foundations of Mathematical Reasoning" href="//localhost:1313/posts/intro-to-foundations/"></a>
-</article>
+  <script>
+    const menuTrigger = document.getElementById('menu-trigger');
+    const menu = document.getElementById('menu');
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Mathematical Induction and the Successor Function
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In mathematics, most basic operations feel intuitive. Consider multiplication or summation. We, without any mathematical thinking, only apply the algorithms that will give us the answer. However, every mathematical algorithm, actually, originate from some theorems.
-In this part, before mathematical induction, it is important to know the Successor Function and its applications, and furthermore, how it is related to induction.
-Let there be a function whose domain and codomain is $\mathbb{N}$ with the property that every natural number has the image of the successor natural number under this function.
-Definition. The successor function is a mathematical function that takes a natural number and returns the next natural number in the sequence. The successor function is denoted by $S$.
-In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N}$ such that $S(n)=n&#43;1$ for all $n \in \mathbb{N}$.
-Definition. An axiom is a statement that is assumed to be true without proof and is used as a starting point to derive other statements (theorems) using logical reasoning, i.e., a basic assumption in a formal system from which all other results are deduced.
-Pieno Axioms:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-30 20:59:00 +0300 +03'>January 30, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Mathematical Induction and the Successor Function" href="//localhost:1313/posts/math/"></a>
-</article>
+    if (menuTrigger && menu) {
+      menuTrigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        menu.classList.toggle('show-mobile-menu');
+      });
+    }
+  </script>
+  <main class="main">
+    <header class="page-header">
+      <div class="breadcrumbs"><a href="//localhost:1313/">Home</a></div>
+      <h1>
+        Posts
+      </h1>
+    </header>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Well Ordering Principle
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Well Ordering Principle: Every nonempty subset of $\mathbb{N}$ has a least element, i.e., there exists $a \in S$ such that $x \geq a$ for all $x \in S$.
-This principle may seem a little obvious. The conditions, however, are considerable. Notice that, firstly, we need a nonempty set. The reason is trivial to comprehend, as the empty set has no elements and therefore it cannot have a least element. Furthermore, the set must be a subset of $\mathbb{N}$.
-We can consider some sets and determine whether they satisfy the Well Ordering Principle, i.e., they are well ordered. Example: Consider the set
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-30 19:59:00 +0300 +03'>January 30, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Well Ordering Principle" href="//localhost:1313/posts/well-ordering/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Strong Induction
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Theorem.(Strong Induction) Let $\phi(n)$ be a property of natural numbers. Suppose that $\phi(1)$ holds and
+          for all $n \in \mathbb{N}$, if $\phi(1)$, $\phi(2)$, $\dots$, $\phi(n)$ hold, then $\phi(n&#43;1)$ holds. Then
+          $\phi(n)$ holds for all $n \in \mathbb{N}$.
+          Also, we can express this theorem in a similar way to what we did in the previous note as follows:
+          Let $S \subseteq \mathbb{N}$. If
+          1. $1 \in S$
+          2. If $k \in S$, and $\{1,2,3, \dots, k\} \subseteq S$, then $k&#43;1 \in S$
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-30 21:28:00 +0300 +03'>January 30,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Strong Induction" href="//localhost:1313/posts/strong/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Introduction to Elementary Number Theory
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Elementary number theory is the branch of mathematics concerned with the study of the integers and their fundamental properties.
-Unlike many areas of mathematics that rely heavily on continuous structures, number theory focuses on discrete objects and exact relationships. Its questions are often simple to state, yet surprisingly deep, and many have shaped the development of modern mathematics.
-At its core, number theory seeks to understand the structure of the integers: how numbers divide one another, how primes are distributed, and how arithmetic behaves under various constraints.
-Despite its elementary appearance, number theory plays a central role in areas ranging from algebra and analysis to cryptography and computer science.
-It is highly recommended for students who major in computer engineering or physics to study elementary number theory, as it helps in understanding the patterns and behaviors.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-26 18:15:00 +0300 +03'>January 26, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Introduction to Elementary Number Theory" href="//localhost:1313/posts/intro-number-theory/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Foundations of Mathematical Reasoning
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Introduction Mathematics is not only a collection of formulas and computations, but also a discipline built
+          upon precise reasoning. Before engaging with advanced mathematical structures, it is essential to understand
+          the logical foundations that govern how mathematical statements are formed, interpreted, and justified. This
+          section is devoted to developing that foundational perspective.
+          We begin with the classical roots of logic, tracing the basic principles of reasoning back to Aristotle’s
+          formulation of logical laws. From there, we study propositional logic: logical connectives, compound
+          statements, and truth tables, which provide a concrete and systematic way to analyze the validity of logical
+          expressions. These tools allow us to determine when statements are true, false, or logically equivalent,
+          independent of any particular mathematical context.
+          Building on this framework, we turn to methods of proof, which form the backbone of mathematical practice.
+          Direct proofs, proof by contradiction, contrapositive arguments.
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-30 20:59:00 +0300 +03'>January 30,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Foundations of Mathematical Reasoning"
+        href="//localhost:1313/posts/intro-to-foundations/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Homogeneous Differential Equations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called homogeneous equations. In this section, we will discuss how to apply this substitution and solve such equations.
-Definition. A first order ordinary differential equation is called homogeneous if it can be expressed in the form
-$$ \frac{dy}{dx}=f\left(\frac{y}{x}\right) $$
-for some function $f$. The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.
-Let
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-26 12:30:00 +0300 +03'>January 26, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Homogeneous Differential Equations" href="//localhost:1313/posts/homogenus-diff/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Mathematical Induction and the Successor Function
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>In mathematics, most basic operations feel intuitive. Consider multiplication or summation. We, without any
+          mathematical thinking, only apply the algorithms that will give us the answer. However, every mathematical
+          algorithm, actually, originate from some theorems.
+          In this part, before mathematical induction, it is important to know the Successor Function and its
+          applications, and furthermore, how it is related to induction.
+          Let there be a function whose domain and codomain is $\mathbb{N}$ with the property that every natural number
+          has the image of the successor natural number under this function.
+          Definition. The successor function is a mathematical function that takes a natural number and returns the next
+          natural number in the sequence. The successor function is denoted by $S$.
+          In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N}$ such that $S(n)=n&#43;1$
+          for all $n \in \mathbb{N}$.
+          Definition. An axiom is a statement that is assumed to be true without proof and is used as a starting point
+          to derive other statements (theorems) using logical reasoning, i.e., a basic assumption in a formal system
+          from which all other results are deduced.
+          Pieno Axioms:
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-30 20:59:00 +0300 +03'>January 30,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Mathematical Induction and the Successor Function"
+        href="//localhost:1313/posts/math/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Initial Value Problems
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Definition. First-order differential equations are differential equations that only involve the first order derivatives of a specific variable with respect to another variable.
-Examples:
-$$ \frac{dy}{dx}=2x, \qquad y’= \arctan(x) &#43; e^x, \qquad (2xe^x)\left(\frac{dy}{dx}\right)=\sin(\arctan(x)) $$
-Definition. Degrees of freedom refers to the number of independent data that can successfully estimate a parameter.
-This may feel a little vague. But think about this; you have computed the result of an indefinite integral, say
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-22 12:30:00 +0300 +03'>January 22, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Initial Value Problems" href="//localhost:1313/posts/initial-value/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Well Ordering Principle
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Well Ordering Principle: Every nonempty subset of $\mathbb{N}$ has a least element, i.e., there exists $a
+          \in S$ such that $x \geq a$ for all $x \in S$.
+          This principle may seem a little obvious. The conditions, however, are considerable. Notice that, firstly, we
+          need a nonempty set. The reason is trivial to comprehend, as the empty set has no elements and therefore it
+          cannot have a least element. Furthermore, the set must be a subset of $\mathbb{N}$.
+          We can consider some sets and determine whether they satisfy the Well Ordering Principle, i.e., they are well
+          ordered. Example: Consider the set
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-30 19:59:00 +0300 +03'>January 30,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Well Ordering Principle"
+        href="//localhost:1313/posts/well-ordering/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Newton&#39;s Law of Cooling
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Newton’s Law of Cooling is a fundamental principle in heat transfer. It states that the rate at which a body loses heat is directly proportional to the difference between its temperature and that of its surrounding environment.
-As this definition suggests, the study of Newton’s Law of Cooling inherently involves differential equations. In fact, the applications of differential equations are extremely broad, since many natural phenomena can be described and analyzed in terms of rates of change.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-22 03:00:00 +0300 +03'>January 22, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Newton&#39;s Law of Cooling" href="//localhost:1313/posts/newton/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Introduction to Elementary Number Theory
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Elementary number theory is the branch of mathematics concerned with the study of the integers and their
+          fundamental properties.
+          Unlike many areas of mathematics that rely heavily on continuous structures, number theory focuses on discrete
+          objects and exact relationships. Its questions are often simple to state, yet surprisingly deep, and many have
+          shaped the development of modern mathematics.
+          At its core, number theory seeks to understand the structure of the integers: how numbers divide one another,
+          how primes are distributed, and how arithmetic behaves under various constraints.
+          Despite its elementary appearance, number theory plays a central role in areas ranging from algebra and
+          analysis to cryptography and computer science.
+          It is highly recommended for students who major in computer engineering or physics to study elementary number
+          theory, as it helps in understanding the patterns and behaviors.
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-26 18:15:00 +0300 +03'>January 26,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Introduction to Elementary Number Theory"
+        href="//localhost:1313/posts/intro-number-theory/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Separable Equations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> Now, we consider some specific methods to solve differential equations. The aim is mostly to consider $y$ as a variable dependent on $x$ and solve the equation for $y$. It is, however, common to leave the expressions in implicit forms. One of the most elementary types of differential equations is separable equations.
-A first-order differential equation is said to be separable if it can be written in a form where all terms involving the dependent variable $y$ and its differential $dy$ appear on one side of the equation, while all terms involving the independent variable $x$ and its differential $dx$ appear on the other side.
-It looks like the following:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-20 23:59:00 +0300 +03'>January 20, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to Separable Equations" href="//localhost:1313/posts/separable-equations/"></a>
-</article>
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Homogeneous Differential Equations
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Some first order ordinary differential equations are not separable, but we can convert them into separable
+          equations after applying simple substitution. Such equations are called homogeneous equations. In this
+          section, we will discuss how to apply this substitution and solve such equations.
+          Definition. A first order ordinary differential equation is called homogeneous if it can be expressed in the
+          form
+          $$ \frac{dy}{dx}=f\left(\frac{y}{x}\right) $$
+          for some function $f$. The given expression may seem a little devious, but an equivalent and often more
+          practical way to verify that a function is homogeneous is through its scaling behavior.
+          Let
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-26 12:30:00 +0300 +03'>January 26,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Homogeneous Differential Equations"
+        href="//localhost:1313/posts/homogenus-diff/"></a>
+    </article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A Friendly Introduction to Differential Equations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The key to jump into differential equations is to first understand the meaning of differentials in the first place. Consider $ dx $ or $ dy $, do they have a considerable meaning alone? The answer to this question is both yes and no, and this is actually one of some concepts which mathematicians and engineers, or applied mathematicians prefer dealing in different ways. In prereqruisite calculus, the reader studied differentiation and is familiar with the expression $\frac{dy}{dx}$. This mathematical expression tells us how fast the dependent variable $y$ changes.
-In the study of differential equations, the symbols $dx$ and $dy$ will be treated as if they were fractions rather than operators, and we will assume that basic algebraic manipulations apply to these expressions.
-It should be understood, however, that each such manipulation is ultimately justified by fundamental results of calculus, such as the chain rule or the manipulations of the limit definition of derivatives. Here, for simplicity, these justifications will not be proved, and will rely instead on intuitive reasoning. From now on, under these circumstances, we call $dx$, where $x$ is the expression of any variable, a differential.
-Now, let’s talk about the equations that involve differentials, which are evidently called differential equations. Consider $$\frac{dy}{dx}=2$$ This is a familiar expression. We infer, here, letting $y$ be the dependent variable, that an infinitesimal change in $x$, say $dx$, results in a change of $2dx$ in $y$. But also, we can infer that the derivative of such $y$ is equal to 2 in the corresponding domain, everywhere. Considering these, we can furthermore evolve our understanding and say $y$ is a function of $x$ and it is of the form $y(x)= 2x &#43; C $, where C is a constant. Apparently, C can take any value, so long as it is a arbitrary constant, since the derivative of C with respect to $x$ is identically zero.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-20 00:00:00 +0000 UTC'>January 20, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-  <a class="entry-link" aria-label="post link to A Friendly Introduction to Differential Equations" href="//localhost:1313/posts/introtodiff/"></a>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="//localhost:1313/">CrichMath</a></span> · 
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Initial Value Problems
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Definition. First-order differential equations are differential equations that only involve the first order
+          derivatives of a specific variable with respect to another variable.
+          Examples:
+          $$ \frac{dy}{dx}=2x, \qquad y’= \arctan(x) &#43; e^x, \qquad
+          (2xe^x)\left(\frac{dy}{dx}\right)=\sin(\arctan(x)) $$
+          Definition. Degrees of freedom refers to the number of independent data that can successfully estimate a
+          parameter.
+          This may feel a little vague. But think about this; you have computed the result of an indefinite integral,
+          say
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-22 12:30:00 +0300 +03'>January 22,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Initial Value Problems"
+        href="//localhost:1313/posts/initial-value/"></a>
+    </article>
+
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Newton&#39;s Law of Cooling
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>Newton’s Law of Cooling is a fundamental principle in heat transfer. It states that the rate at which a body
+          loses heat is directly proportional to the difference between its temperature and that of its surrounding
+          environment.
+          As this definition suggests, the study of Newton’s Law of Cooling inherently involves differential equations.
+          In fact, the applications of differential equations are extremely broad, since many natural phenomena can be
+          described and analyzed in terms of rates of change.
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-22 03:00:00 +0300 +03'>January 22,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Newton&#39;s Law of Cooling"
+        href="//localhost:1313/posts/newton/"></a>
+    </article>
+
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">Separable Equations
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p> Now, we consider some specific methods to solve differential equations. The aim is mostly to consider $y$ as
+          a variable dependent on $x$ and solve the equation for $y$. It is, however, common to leave the expressions in
+          implicit forms. One of the most elementary types of differential equations is separable equations.
+          A first-order differential equation is said to be separable if it can be written in a form where all terms
+          involving the dependent variable $y$ and its differential $dy$ appear on one side of the equation, while all
+          terms involving the independent variable $x$ and its differential $dx$ appear on the other side.
+          It looks like the following:
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-20 23:59:00 +0300 +03'>January 20,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to Separable Equations"
+        href="//localhost:1313/posts/separable-equations/"></a>
+    </article>
+
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">A Friendly Introduction to Differential Equations
+        </h2>
+      </header>
+      <div class="entry-content">
+        <p>The key to jump into differential equations is to first understand the meaning of differentials in the first
+          place. Consider $ dx $ or $ dy $, do they have a considerable meaning alone? The answer to this question is
+          both yes and no, and this is actually one of some concepts which mathematicians and engineers, or applied
+          mathematicians prefer dealing in different ways. In prereqruisite calculus, the reader studied differentiation
+          and is familiar with the expression $\frac{dy}{dx}$. This mathematical expression tells us how fast the
+          dependent variable $y$ changes.
+          In the study of differential equations, the symbols $dx$ and $dy$ will be treated as if they were fractions
+          rather than operators, and we will assume that basic algebraic manipulations apply to these expressions.
+          It should be understood, however, that each such manipulation is ultimately justified by fundamental results
+          of calculus, such as the chain rule or the manipulations of the limit definition of derivatives. Here, for
+          simplicity, these justifications will not be proved, and will rely instead on intuitive reasoning. From now
+          on, under these circumstances, we call $dx$, where $x$ is the expression of any variable, a differential.
+          Now, let’s talk about the equations that involve differentials, which are evidently called differential
+          equations. Consider $$\frac{dy}{dx}=2$$ This is a familiar expression. We infer, here, letting $y$ be the
+          dependent variable, that an infinitesimal change in $x$, say $dx$, results in a change of $2dx$ in $y$. But
+          also, we can infer that the derivative of such $y$ is equal to 2 in the corresponding domain, everywhere.
+          Considering these, we can furthermore evolve our understanding and say $y$ is a function of $x$ and it is of
+          the form $y(x)= 2x &#43; C $, where C is a constant. Apparently, C can take any value, so long as it is a
+          arbitrary constant, since the derivative of C with respect to $x$ is identically zero.
+          ...</p>
+      </div>
+      <footer class="entry-footer"><span title='2026-01-20 00:00:00 +0000 UTC'>January 20,
+          2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
+      <a class="entry-link" aria-label="post link to A Friendly Introduction to Differential Equations"
+        href="//localhost:1313/posts/introtodiff/"></a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 <a href="//localhost:1313/">CrichMath</a></span> ·
 
     <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+      Powered by
+      <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+      <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+  </footer>
+  <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+      <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+  </a>
 
-<script>
+  <script>
     let menu = document.getElementById('menu');
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+
+      const scrollPosition = localStorage.getItem("menu-scroll-position");
+      if (scrollPosition) {
+        menu.scrollLeft = parseInt(scrollPosition, 10);
+      }
+
+      menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+      }
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+            behavior: "smooth"
+          });
+        } else {
+          document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+        }
+        if (id === "top") {
+          history.replaceState(null, null, " ");
+        } else {
+          history.pushState(null, null, `#${id}`);
+        }
+      });
     });
 
-</script>
-<script>
+  </script>
+  <script>
     var mybutton = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
+      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        mybutton.style.visibility = "visible";
+        mybutton.style.opacity = "1";
+      } else {
+        mybutton.style.visibility = "hidden";
+        mybutton.style.opacity = "0";
+      }
     };
 
-</script>
-<script>
+  </script>
+  <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
-        }
+      const html = document.querySelector("html");
+      if (html.dataset.theme === "dark") {
+        html.dataset.theme = 'light';
+        localStorage.setItem("pref-theme", 'light');
+      } else {
+        html.dataset.theme = 'dark';
+        localStorage.setItem("pref-theme", 'dark');
+      }
     })
 
-</script>
+  </script>
 </body>
 
 </html>
