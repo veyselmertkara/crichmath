@@ -459,4 +459,51 @@ a:hover {
     h3 {
         font-size: 1.3rem !important;
     }
+
+    /* --- HAMBURGER MENU (CSS ONLY) --- */
+
+    /* Show trigger */
+    #menu-trigger {
+        display: block !important;
+        background: transparent;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    /* Hide menu by default */
+    #menu {
+        display: none !important;
+        /* Forces hidden initially */
+        width: 100%;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        padding: 20px 0 !important;
+        background: #8b0000;
+        /* Match header color */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Show menu when toggled */
+    #menu.show-mobile-menu {
+        display: flex !important;
+    }
+
+    /* Make sure nav can hold the absolute menu */
+    .header .nav {
+        position: relative;
+        flex-wrap: wrap !important;
+    }
+
+    /* Dark mode override for menu background */
+    :root[data-theme="dark"] #menu {
+        background: #000000;
+    }
 }
