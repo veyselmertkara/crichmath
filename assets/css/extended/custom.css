@@ -470,8 +470,10 @@ a:hover {
         color: inherit;
         cursor: pointer;
         padding: 5px;
-        margin-left: auto !important;
-        /* Push to the far right */
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     /* Hide menu by default */
