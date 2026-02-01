@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mini Essays on CrichMath</title>
+    <link>http://localhost:1313/mini-essays/</link>
+    <description>Recent content in Mini Essays on CrichMath</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Thu, 01 Feb 2024 12:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/mini-essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pisagor Teoremi&#39;nin Zarif Bir İspatı</title>
+      <link>http://localhost:1313/mini-essays/pisagor-teoremi/</link>
+      <pubDate>Thu, 01 Feb 2024 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/pisagor-teoremi/</guid>
+      <description>Geometri dünyasının en ünlü teoremi üzerine kısa bir bakış.</description>
+    </item>
+    <item>
+      <title>Why Prime Numbers are Infinite</title>
+      <link>http://localhost:1313/mini-essays/infinity-of-primes/</link>
+      <pubDate>Thu, 01 Feb 2024 11:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/infinity-of-primes/</guid>
+      <description>A brief look at Euclid&amp;rsquo;s proof for the infinitude of primes.</description>
+    </item>
+    <item>
+      <title>The Beauty of Euler&#39;s Identity</title>
+      <link>http://localhost:1313/mini-essays/eulers-identity/</link>
+      <pubDate>Thu, 01 Feb 2024 10:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/eulers-identity/</guid>
+      <description>Why e^(ix) = cos(x) + i*sin(x) is considered the most beautiful equation.</description>
+    </item>
+  </channel>
+</rss>

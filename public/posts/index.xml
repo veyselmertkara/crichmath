@@ -72,14 +72,9 @@ In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N
       <link>http://localhost:1313/posts/homogenus-diff/</link>
       <pubDate>Mon, 26 Jan 2026 12:30:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/homogenus-diff/</guid>
-      <description>&lt;p&gt; Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt;
- &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dy}{dx}=f\left(\frac{y}{x}\right)
-$$&lt;/p&gt;
-&lt;p&gt;for some function $f$.
-The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.&lt;br&gt;
- Let&lt;/p&gt;</description>
+      <description>&lt;p&gt;Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt; &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
+&lt;p&gt;$$ \frac{dy}{dx}=f\left(\frac{y}{x}\right) $$&lt;/p&gt;
+&lt;p&gt;for some function $f$. The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.&lt;br&gt;  Let&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial Value Problems</title>

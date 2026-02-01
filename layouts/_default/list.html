@@ -56,6 +56,11 @@
 
 {{- $class := "post-entry" }}
 
+{{- /* ÖZEL EKLEME IS HERE - Adding lang class */ -}}
+{{- if .Params.lang }}
+{{- $class = printf "%s lang-%s" $class .Params.lang }}
+{{- end }}
+
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
@@ -79,7 +84,12 @@
             {{- end }}
         </h2>
     </header>
-    {{/* SUMMARY/DESCRIPTION REMOVED FROM HERE */}}
+    {{- /* Summary removed as requested */ -}}
+    {{- /* if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end */ -}}
     {{- if not (.Param "hideMeta") }}
     <footer class="entry-footer">
         {{- partial "post_meta.html" . -}}

@@ -72,14 +72,9 @@ In other words, the successor function is given by $S : \mathbb{N} \to \mathbb{N
       <link>http://localhost:1313/posts/homogenus-diff/</link>
       <pubDate>Mon, 26 Jan 2026 12:30:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/homogenus-diff/</guid>
-      <description>&lt;p&gt; Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt;
- &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
-&lt;p&gt;$$
-\frac{dy}{dx}=f\left(\frac{y}{x}\right)
-$$&lt;/p&gt;
-&lt;p&gt;for some function $f$.
-The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.&lt;br&gt;
- Let&lt;/p&gt;</description>
+      <description>&lt;p&gt;Some first order ordinary differential equations are not separable, but we can convert them into separable equations after applying simple substitution. Such equations are called &lt;span style=&#34;color: red&#34;&gt;homogeneous equations&lt;/span&gt;. In this section, we will discuss how to apply this substitution and solve such equations.&lt;br&gt; &lt;strong&gt;Definition.&lt;/strong&gt; A first order ordinary differential equation is called &lt;span style=&#34;color: red&#34;&gt;homogeneous&lt;/span&gt; if it can be expressed in the form&lt;/p&gt;
+&lt;p&gt;$$ \frac{dy}{dx}=f\left(\frac{y}{x}\right) $$&lt;/p&gt;
+&lt;p&gt;for some function $f$. The given expression may seem a little devious, but an equivalent and often more practical way to verify that a function is homogeneous is through its scaling behavior.&lt;br&gt;  Let&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial Value Problems</title>
@@ -124,6 +119,34 @@ In prereqruisite calculus, the reader studied differentiation and is familiar wi
  It should be understood, however, that each such manipulation is ultimately justified by fundamental results of calculus, such as the chain rule or the manipulations of the limit definition of derivatives. Here, for simplicity, these justifications will not be proved, and will rely instead on intuitive reasoning. From now on, under these circumstances, we call $dx$, where $x$ is the expression of any variable, a differential.&lt;br&gt;
  Now, let&amp;rsquo;s talk about the equations that involve differentials, which are evidently called differential equations. Consider $$\frac{dy}{dx}=2$$
 This is a familiar expression. We infer, here, letting $y$ be the dependent variable, that an infinitesimal change in $x$, say $dx$, results in a change of $2dx$ in $y$. But also, we can infer that the derivative of such $y$ is equal to 2 in the corresponding domain, everywhere. Considering these, we can furthermore evolve our understanding and say $y$ is a function of $x$ and it is of the form $y(x)= 2x + C $, where C is a constant. Apparently, C can take any value, so long as it is a arbitrary constant, since the derivative of C with respect to $x$ is identically zero.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pisagor Teoremi&#39;nin Zarif Bir İspatı</title>
+      <link>http://localhost:1313/mini-essays/pisagor-teoremi/</link>
+      <pubDate>Thu, 01 Feb 2024 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/pisagor-teoremi/</guid>
+      <description>Geometri dünyasının en ünlü teoremi üzerine kısa bir bakış.</description>
+    </item>
+    <item>
+      <title>Why Prime Numbers are Infinite</title>
+      <link>http://localhost:1313/mini-essays/infinity-of-primes/</link>
+      <pubDate>Thu, 01 Feb 2024 11:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/infinity-of-primes/</guid>
+      <description>A brief look at Euclid&amp;rsquo;s proof for the infinitude of primes.</description>
+    </item>
+    <item>
+      <title>The Beauty of Euler&#39;s Identity</title>
+      <link>http://localhost:1313/mini-essays/eulers-identity/</link>
+      <pubDate>Thu, 01 Feb 2024 10:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/mini-essays/eulers-identity/</guid>
+      <description>Why e^(ix) = cos(x) + i*sin(x) is considered the most beautiful equation.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;(Buraya About yazısı gelecek)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

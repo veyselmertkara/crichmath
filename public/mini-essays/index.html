@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Foundations of Mathematical Reasoning | CrichMath</title>
+<title>Mini Essays | CrichMath</title>
 <meta name="keywords" content="">
-<meta name="description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+<meta name="description" content="Kısa matematiksel denemeler ve notlar.">
 <meta name="author" content="Selim Kaan Ozsoy">
-<link rel="canonical" href="http://localhost:1313/categories/foundations-of-mathematical-reasoning/">
+<link rel="canonical" href="http://localhost:1313/mini-essays/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.bd13bb913af01b5e5ed9555627aa09c3bd998746a46ecec401d59973a5eb518a.css" integrity="sha256-vRO7kTrwG15e2VVWJ6oJw72Zh0akbs7EAdWZc6XrUYo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/foundations-of-mathematical-reasoning/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/foundations-of-mathematical-reasoning/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/mini-essays/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/mini-essays/">
 <noscript>
     <style>
         #theme-toggle,
@@ -84,16 +84,31 @@
     });">
 </script>
 
-<meta property="og:url" content="http://localhost:1313/categories/foundations-of-mathematical-reasoning/">
+<meta property="og:url" content="http://localhost:1313/mini-essays/">
   <meta property="og:site_name" content="CrichMath">
-  <meta property="og:title" content="Foundations of Mathematical Reasoning">
-  <meta property="og:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+  <meta property="og:title" content="Mini Essays">
+  <meta property="og:description" content="Kısa matematiksel denemeler ve notlar.">
   <meta property="og:locale" content="tr-tr">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Foundations of Mathematical Reasoning">
-<meta name="twitter:description" content="Açık kaynaklı matematik notları ve ispat kütüphanesi.">
+<meta name="twitter:title" content="Mini Essays">
+<meta name="twitter:description" content="Kısa matematiksel denemeler ve notlar.">
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Mini Essays",
+      "item": "http://localhost:1313/mini-essays/"
+    }
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
     <header class="header">
@@ -142,7 +157,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/mini-essays/" title="Mini Essays">
-                    <span>Mini Essays</span>
+                    <span class="active">Mini Essays</span>
                 </a>
             </li>
             <li>
@@ -167,20 +182,91 @@
         }
     })();
 </script><main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
     <h1>
-        Foundations of Mathematical Reasoning
+        Mini Essays
     </h1>
+    <div class="post-description">
+        Kısa matematiksel denemeler ve notlar.
+    </div>
 </header>
+<div class="post-content"><div class="language-filter" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem;">
+    <button onclick="filterLanguage('en')" class="lang-btn active" id="btn-en">English</button>
+    <button onclick="filterLanguage('tr')" class="lang-btn" id="btn-tr">Turkish</button>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Sayfa ilk yüklendiğinde varsayılan olarak İngilizceyi seç
+    filterLanguage('en');
+});
 
-<article class="post-entry tag-entry"> 
+function filterLanguage(lang) {
+    const articles = document.querySelectorAll('.post-entry');
+    const buttons = document.querySelectorAll('.lang-btn');
+    
+    // Buton stillerini güncelle
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn-' + lang).classList.add('active');
+
+    articles.forEach(article => {
+        // Javascript ile class kontrolü
+        if (article.classList.contains('lang-' + lang)) {
+            article.style.display = 'block';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+}
+</script>
+<style>
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.lang-btn:hover {
+    background: var(--entry);
+}
+.lang-btn.active {
+    background: var(--primary);
+    color: var(--theme);
+}
+</style>
+
+
+</div>
+
+<article class="post-entry lang-tr"> 
     <header class="entry-header">
-        <h2 class="entry-hint-parent">Foundations of Mathematical Reasoning
+        <h2 class="entry-hint-parent">Pisagor Teoremi&#39;nin Zarif Bir İspatı
         </h2>
     </header>
-    
-    <footer class="entry-footer"><span title='2026-01-30 20:59:00 +0300 +03'>January 30, 2026</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy, Middle East Technical University</span></footer>
-    <a class="entry-link" aria-label="post link to Foundations of Mathematical Reasoning" href="http://localhost:1313/posts/intro-to-foundations/"></a>
+    <footer class="entry-footer"><span title='2024-02-01 12:00:00 +0300 +03'>February 1, 2024</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy</span></footer>
+    <a class="entry-link" aria-label="post link to Pisagor Teoremi&#39;nin Zarif Bir İspatı" href="http://localhost:1313/mini-essays/pisagor-teoremi/"></a>
+</article>
+
+<article class="post-entry lang-en"> 
+    <header class="entry-header">
+        <h2 class="entry-hint-parent">Why Prime Numbers are Infinite
+        </h2>
+    </header>
+    <footer class="entry-footer"><span title='2024-02-01 11:00:00 +0300 +03'>February 1, 2024</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy</span></footer>
+    <a class="entry-link" aria-label="post link to Why Prime Numbers are Infinite" href="http://localhost:1313/mini-essays/infinity-of-primes/"></a>
+</article>
+
+<article class="post-entry lang-en"> 
+    <header class="entry-header">
+        <h2 class="entry-hint-parent">The Beauty of Euler&#39;s Identity
+        </h2>
+    </header>
+    <footer class="entry-footer"><span title='2024-02-01 10:00:00 +0300 +03'>February 1, 2024</span>&nbsp;·&nbsp;<span>Selim Kaan Ozsoy</span></footer>
+    <a class="entry-link" aria-label="post link to The Beauty of Euler&#39;s Identity" href="http://localhost:1313/mini-essays/eulers-identity/"></a>
 </article>
     </main>
     

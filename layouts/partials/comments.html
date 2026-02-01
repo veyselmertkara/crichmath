@@ -1,0 +1,111 @@
+{{- if eq .Section "mini-essays" -}}
+<div class="like-button-container">
+    <button id="like-btn" class="like-btn" aria-label="Like this essay">
+        <svg id="heart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+        </svg>
+        <span id="like-count">...</span>
+    </button>
+</div>
+
+<style>
+    .like-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .like-btn {
+        background: transparent;
+        border: 2px solid var(--primary);
+        border-radius: 50px;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+        color: var(--primary);
+        transition: all 0.3s ease;
+    }
+
+    .like-btn:hover {
+        background: var(--entry);
+        transform: scale(1.05);
+    }
+
+    .like-btn.liked {
+        background: var(--primary);
+        color: var(--theme);
+        cursor: default;
+        /* Zaten beğendiyse tıklamayı engellemiş gibi gösterelim */
+    }
+
+    .like-btn.liked svg {
+        fill: var(--theme);
+        stroke: var(--theme);
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", async function () {
+        const btn = document.getElementById("like-btn");
+        const countSpan = document.getElementById("like-count");
+
+        // Benzersiz anahtar: URL yolundaki gereksiz slashları temizle
+        const key = window.location.pathname.replace(/^\/|\/$/g, '');
+        const storageKey = "liked_" + key;
+
+        // 1. Sunucudan mevcut beğeni sayısını çek
+        try {
+            const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`);
+            if (res.ok) {
+                const data = await res.json();
+                countSpan.innerText = `${data.count}`;
+            } else {
+                countSpan.innerText = "0";
+            }
+        } catch (e) {
+            console.error("Like sayısı yüklenemedi", e);
+            countSpan.innerText = "0";
+        }
+
+        // Daha önce beğenmiş mi diye kontrol et (Görsel durum için)
+        if (localStorage.getItem(storageKey) === "true") {
+            btn.classList.add("liked");
+        }
+
+        // Tıklama Olayı
+        btn.addEventListener("click", async function () {
+            if (btn.classList.contains("liked")) {
+                return; // Zaten beğenmişse bir şey yapma
+            }
+
+            // Hızlı tepki için arayüzü hemen güncelle (Optimistic UI)
+            let currentCount = parseInt(countSpan.innerText) || 0;
+            countSpan.innerText = `${currentCount + 1}`;
+            btn.classList.add("liked");
+
+            // Animasyon
+            btn.style.transform = "scale(1.2)";
+            setTimeout(() => btn.style.transform = "scale(1)", 200);
+
+            // Sunucuya gönder
+            try {
+                const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`, { method: "POST" });
+                if (res.ok) {
+                    const data = await res.json();
+                    countSpan.innerText = `${data.count}`; // Sunucudan gelen kesin sayıyı yaz
+                    localStorage.setItem(storageKey, "true");
+                }
+            } catch (e) {
+                console.error("Like gönderilemedi", e);
+            }
+        });
+    });
+</script>
+{{- end -}}

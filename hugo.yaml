@@ -39,26 +39,18 @@ params:
 # --- MENÜ YAPISI (Dersler Burada Tanımlanır) ---
 menu:
   main:
-    - identifier: calculus-i
-      name: Advanced Calculus
-      url: /categories/calculus-i/
+    - identifier: home
+      name: Home
+      url: /
       weight: 10
-    - identifier: calculus-ii
-      name: Multivariable Calculus
-      url: /categories/calculus-ii/
+    - identifier: mini-essays
+      name: Mini Essays
+      url: /mini-essays/
       weight: 20
-    - identifier: elementary-number-theory
-      name: Elementary Number Theory
-      url: /categories/elementary-number-theory/ 
+    - identifier: about
+      name: About
+      url: /about/
       weight: 30
-    - identifier: diff-eq        # YENİ DERS EKLENDİ
-      name: Differential Equations
-      url: /categories/differential-equations/
-      weight: 40
-    - identifier: foundations
-      name: Foundations of Mathematical Reasoning
-      url: /categories/foundations-of-mathematical-reasoning/
-      weight: 60
 
 markup:
   goldmark:
