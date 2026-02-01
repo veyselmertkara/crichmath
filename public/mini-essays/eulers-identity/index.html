@@ -294,8 +294,6 @@
     .like-btn.liked {
         background: var(--primary);
         color: var(--theme);
-        cursor: default;
-         
     }
 
     .like-btn.liked svg {
@@ -333,30 +331,48 @@
         }
 
         
+        let isProcessing = false; 
+
         btn.addEventListener("click", async function () {
-            if (btn.classList.contains("liked")) {
-                return; 
+            if (isProcessing) return;
+            isProcessing = true;
+
+            const isLiked = btn.classList.contains("liked");
+            const method = isLiked ? "DELETE" : "POST"; 
+            let currentCount = parseInt(countSpan.innerText) || 0;
+
+            
+            if (isLiked) {
+                
+                currentCount = Math.max(0, currentCount - 1);
+                btn.classList.remove("liked");
+                localStorage.removeItem(storageKey);
+            } else {
+                
+                currentCount++;
+                btn.classList.add("liked");
+                localStorage.setItem(storageKey, "true");
+
+                
+                btn.style.transform = "scale(1.2)";
+                setTimeout(() => btn.style.transform = "scale(1)", 200);
             }
 
-            
-            let currentCount = parseInt(countSpan.innerText) || 0;
-            countSpan.innerText = `${currentCount + 1}`;
-            btn.classList.add("liked");
-
-            
-            btn.style.transform = "scale(1.2)";
-            setTimeout(() => btn.style.transform = "scale(1)", 200);
+            countSpan.innerText = `${currentCount}`;
 
             
             try {
-                const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`, { method: "POST" });
+                const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`, { method: method });
                 if (res.ok) {
                     const data = await res.json();
                     countSpan.innerText = `${data.count}`; 
-                    localStorage.setItem(storageKey, "true");
                 }
             } catch (e) {
-                console.error("Like gönderilemedi", e);
+                console.error("İşlem başarısız", e);
+                
+                
+            } finally {
+                isProcessing = false;
             }
         });
     });

@@ -41,8 +41,6 @@
     .like-btn.liked {
         background: var(--primary);
         color: var(--theme);
-        cursor: default;
-        /* Zaten beğendiyse tıklamayı engellemiş gibi gösterelim */
     }
 
     .like-btn.liked svg {
@@ -80,30 +78,48 @@
         }
 
         // Tıklama Olayı
+        let isProcessing = false; // Çift tıklama koruması için
+
         btn.addEventListener("click", async function () {
-            if (btn.classList.contains("liked")) {
-                return; // Zaten beğenmişse bir şey yapma
+            if (isProcessing) return;
+            isProcessing = true;
+
+            const isLiked = btn.classList.contains("liked");
+            const method = isLiked ? "DELETE" : "POST"; // Beğenildiyse sil, değilse ekle
+            let currentCount = parseInt(countSpan.innerText) || 0;
+
+            // Optimistic UI (Arayüzü hemen güncelle)
+            if (isLiked) {
+                // Unlike işlemi
+                currentCount = Math.max(0, currentCount - 1);
+                btn.classList.remove("liked");
+                localStorage.removeItem(storageKey);
+            } else {
+                // Like işlemi
+                currentCount++;
+                btn.classList.add("liked");
+                localStorage.setItem(storageKey, "true");
+
+                // Animasyon (Sadece like atarken)
+                btn.style.transform = "scale(1.2)";
+                setTimeout(() => btn.style.transform = "scale(1)", 200);
             }
 
-            // Hızlı tepki için arayüzü hemen güncelle (Optimistic UI)
-            let currentCount = parseInt(countSpan.innerText) || 0;
-            countSpan.innerText = `${currentCount + 1}`;
-            btn.classList.add("liked");
-
-            // Animasyon
-            btn.style.transform = "scale(1.2)";
-            setTimeout(() => btn.style.transform = "scale(1)", 200);
+            countSpan.innerText = `${currentCount}`;
 
             // Sunucuya gönder
             try {
-                const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`, { method: "POST" });
+                const res = await fetch(`/api/likes?key=${encodeURIComponent(key)}`, { method: method });
                 if (res.ok) {
                     const data = await res.json();
                     countSpan.innerText = `${data.count}`; // Sunucudan gelen kesin sayıyı yaz
-                    localStorage.setItem(storageKey, "true");
                 }
             } catch (e) {
-                console.error("Like gönderilemedi", e);
+                console.error("İşlem başarısız", e);
+                // Hata olursa işlemi geri al (opsiyonel ama iyi bir pratiktir)
+                // Şimdilik kafa karıştırmasın diye eklemiyorum.
+            } finally {
+                isProcessing = false;
             }
         });
     });
