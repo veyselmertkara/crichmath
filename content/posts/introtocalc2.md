@@ -37,3 +37,5 @@ The modern understanding of integration is inseparable from the work of Bernhard
 5. Sequences, Series, and Power Series
 6. Partial Differentiation
 7. Applications of Partial Derivatives
+
+{{< pdf "Introduction_to_Calculus_II.pdf" >}}

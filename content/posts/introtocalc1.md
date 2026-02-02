@@ -33,3 +33,5 @@ $$
 
 Here, the force $\vec{F}$ is allowed to vary both in magnitude and direction, and the differential displacement $d\vec{r}$ is taken along the actual path of motion. The integral accumulates infinitesimal contributions of work along the curve, producing a result that accurately reflects the physical situation.  
 &emsp;In this sense, calculus can be viewed as the mathematical framework that replaces idealized, conditional formulas with precise and general descriptions.
+
+{{< pdf "Introduction_to_Calculus_I (1).pdf" >}}
