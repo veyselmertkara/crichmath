@@ -19,7 +19,7 @@ params:
   
   homeInfoParams:
     Title: "CrichMath" # Listenin tepesindeki büyük başlık
-    Content: "Undergraduate-level, student-friendly mathematics lecture notes by Selim Kaan Ozsoy" # Altındaki gri açıklama
+    Content: "Undergraduate-level, student-friendly mathematics lecture notes" # Altındaki gri açıklama
 
   socialIcons: []
   # --- YAZI DETAYLARI ---
