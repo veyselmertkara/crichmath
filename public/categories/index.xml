@@ -9,10 +9,24 @@
     <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Advanced Calculus</title>
+      <link>http://localhost:1313/categories/advanced-calculus/</link>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/categories/advanced-calculus/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Calculus I</title>
       <link>http://localhost:1313/categories/calculus-i/</link>
       <pubDate>Mon, 02 Feb 2026 12:00:00 +0300</pubDate>
       <guid>http://localhost:1313/categories/calculus-i/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calculus II</title>
+      <link>http://localhost:1313/categories/calculus-ii/</link>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/categories/calculus-ii/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +55,6 @@
       <link>http://localhost:1313/categories/differential-equations/</link>
       <pubDate>Mon, 26 Jan 2026 12:30:00 +0300</pubDate>
       <guid>http://localhost:1313/categories/differential-equations/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Calculus II</title>
-      <link>http://localhost:1313/categories/calculus-ii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/calculus-ii/</guid>
       <description></description>
     </item>
   </channel>

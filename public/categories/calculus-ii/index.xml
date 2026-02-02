@@ -6,6 +6,19 @@
     <description>Recent content in Calculus II on CrichMath</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>tr-tr</language>
+    <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/calculus-ii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Calculus II</title>
+      <link>http://localhost:1313/posts/introtocalc2/</link>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/introtocalc2/</guid>
+      <description>&lt;h2 id=&#34;1-a-comparison&#34;&gt;1. A Comparison&lt;/h2&gt;
+&lt;p&gt;The way calculus is divided and presented varies significantly across universities and textbooks. In many curricula, calculus is split into two separate courses, commonly referred to as Calculus I and Calculus II. In such settings, Calculus I typically focuses on limits and differentiation, while Calculus II begins with integration, often introduced through Riemann sums, and continues with techniques of integration and applications.&lt;br&gt;
+ At Middle East Technical University (METU), however, this division does not appear explicitly. Instead, the standard sequence consists of &lt;em&gt;Calculus with Analytic Geometry&lt;/em&gt; followed by &lt;em&gt;Multivariable Calculus&lt;/em&gt;. While these titles reflect the geometric and multidimensional aspects of the material, they can be somewhat vague in terms of content. For instance, topics such as infinite sequences and series are also covered within Multivariable Calculus, even though they are not inherently multivariable in nature.&lt;br&gt;
+ For the purposes of this course, it is therefore useful to adopt a conceptual separation resembling the traditional Calculus I–Calculus II structure. In this framework, the present course will begin with Riemann sums and the theory of integration. This choice is motivated by two main reasons.&lt;br&gt;
+ First, from a historical perspective, the notions of limits and differentiation emerged in the 17th century, largely driven by physical problems related to motion, change, and rates. These ideas were developed by Newton and Leibniz as mathematical tools to formalize physical intuition. Integration, on the other hand, acquired its rigorous foundation much later. The definition of the integral via Riemann sums, which interprets integration as the limit of an infinite sum, belongs to the 19th century and is closely associated with the work of Bernhard Riemann. From this viewpoint, it is natural to treat integration as a distinct conceptual development rather than merely the inverse of differentiation.&lt;br&gt;
+ Second, the Fundamental Theorem of Calculus plays a central role in unifying differentiation and integration. It establishes a deep and nontrivial connection between two ideas that are, at first glance, conceptually different. Given its importance and its foundational role in the theory of integration, it is pedagogically reasonable to introduce integration as a new topic in its own right, rather than as a continuation of earlier material.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

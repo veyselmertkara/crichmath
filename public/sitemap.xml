@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/advanced-calculus/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/calculus-i/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/calculus-ii/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/introtoadvcalc/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/introtocalc1/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/introtocalc2/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-02T12:00:00+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/archive/</loc>
     <lastmod>2026-01-30T21:28:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-01-30T21:28:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-30T21:28:00+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/elementary-number-theory/</loc>
-    <lastmod>2026-01-30T21:28:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-01-30T21:28:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/strong/</loc>
@@ -53,20 +71,10 @@
     <loc>http://localhost:1313/posts/introtodiff/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mini-essays/</loc>
-    <lastmod>2024-02-01T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mini-essays/pisagor-teoremi/</loc>
-    <lastmod>2024-02-01T12:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mini-essays/infinity-of-primes/</loc>
-    <lastmod>2024-02-01T11:00:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/mini-essays/eulers-identity/</loc>
-    <lastmod>2024-02-01T10:00:00+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mini-essays/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
