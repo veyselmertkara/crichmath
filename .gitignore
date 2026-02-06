@@ -23,3 +23,17 @@ Desktop.ini
 # Environment variables (Critical)
 .env
 .dev.vars
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Cloudflare / Wrangler checks
+.wrangler/
+
+# Temporary files
+tmp/
+temp/
