@@ -14,7 +14,6 @@ math: true
 
 # $\sqrt{2}$'nin İrrasyonelliği
 
-*√2 sayısının irrasyonelliği üzerine tarihsel ve matematiksel bir inceleme.*
 
 ---
 
