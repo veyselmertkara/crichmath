@@ -10,13 +10,13 @@ draft: false
 &emsp;Similarly, we will consider linear ODEs and how to convert them into easily-integrable equations, here by integrating factors.  
 &emsp;We begin by giving three definitions.
 
-**Definition 1**
+**Definition 1.**
 An integrating factor is a function by which an ordinary differential equation can be multiplied to make it integrable.
 
-**Definition 2**
+**Definition 2.**
 In first-order linear ODEs, standard form usually means writing the equation so that the coefficient of the highest-order derivative, i.e., $y'(x)$ or $\frac{dy}{dx}$, is $1$.
 
-**Definition 3**
+**Definition 3.**
 Let $y$ be a function of $x$ and so $x$ is an independent variable and $y$ is a dependent variable. An ordinary, first-order and linear differential equation is given by
 
 $$a(x)\left(\frac{dy}{dx}\right) +b(x)y = r(x),$$
