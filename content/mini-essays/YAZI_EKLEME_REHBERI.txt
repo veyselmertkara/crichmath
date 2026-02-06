@@ -1,0 +1,35 @@
+[ YENİ ESSAY EKLEME REHBERİ ]
+
+1. TÜRKÇE YAZI EKLEMEK İÇİN:
+----------------------------
+Bu klasöre (content/mini-essays/) yeni bir dosya oluşturun.
+Dosya adının sonu sadece ".md" ile bitmeli. 
+Örnek: "yeni-konu.md"
+
+Hugo bunu otomatik olarak TÜRKÇE kabul eder ve "Turkish" listesinde gösterir.
+
+2. İNGİLİZCE YAZI EKLEMEK İÇİN:
+-------------------------------
+Yine bu klasöre dosya oluşturun.
+ANCAK dosya adının sonuna ".en.md" eklemek zorundasınız.
+Örnek: "new-topic.en.md"
+
+Hugo ".en" uzantısını görünce bunu İNGİLİZCE kabul eder ve "English" listesinde gösterir.
+
+TASLAK (Frontmatter) ÖRNEĞİ:
+Mevcut dosyaların içindeki üst kısmı (--- ile --- arası) kopyalayıp yeni dosyanıza yapıştırın:
+---
+title: "Buraya Başlık Gelecek"
+date: 2026-02-06
+author: "Adınız"
+description: "Kısa açıklama..."
+math: true  (Matematik formülleri varsa true, yoksa false)
+draft: false (Yayınlamak için false yapın)
+---
+
+3. ANA SAYFADAKİ "LATEST MINI ESSAY" BUTONUNU GÜNCELLEMEK:
+----------------------------------------------------------
+Eğer ana sayfadaki mavi butona tıklandığında bu yeni yazının açılmasını istiyorsanız:
+1. "hugo.yaml" dosyasını açın.
+2. "profileMode" > "buttons" altındaki "url" kısmını yeni yazınızın adresiyle değiştirin.
+   Örnek: url: "/mini-essays/yeni-konu/"

@@ -1,24 +1,65 @@
 baseURL: "https://crichmath.org/"
-languageCode: "tr-tr"
-title: "CrichMath" # Tarayıcı sekmesinde görünecek isim
+# languageCode: "tr-tr"
+defaultContentLanguage: tr
 theme: "PaperMod"
-
 enableEmoji: true
 
+languages:
+  tr:
+    languageName: "Türkçe"
+    weight: 1
+    title: "CrichMath"
+    params:
+      homeInfoParams:
+        Title: " Lecture Notes"
+        Content: "Undergraduate-level, student-friendly mathematics lecture notes"
+  en:
+    languageName: "English"
+    weight: 2
+    title: "CrichMath (EN)"
+    params:
+      homeInfoParams:
+        Title: " Lecture Notes"
+        Content: "Mathematical essays and notes in English"
+    menu:
+      main:
+        - identifier: home
+          name: Home
+          url: /en/
+          weight: 10
+        - identifier: mini-essays
+          name: Mini Essays
+          url: /en/mini-essays/
+          weight: 20
+        - identifier: about
+          name: About
+          url: /en/about/
+          weight: 30
+
 params:
+  disableLangToggle: true
   # --- GENEL GÖRÜNÜM (Wiki Tarzı) ---
   env: production
   description: "Açık kaynaklı matematik notları ve ispat kütüphanesi."
-  author: "Selim Kaan Ozsoy" # Bu isim SADECE yazıların içinde, başlığın altında minik yazar olarak görünür.
+  author: "Selim Kaan Ozsoy"
   defaultTheme: "auto"
+  
+  # --- LOGO (Header Sol Üst) ---
+  label:
+    icon: "/logo1.png"
+    iconHeight: 150
+    text: ""
   
   # --- ANA SAYFA DÜZENİ (HomeInfoMode) ---
   # ProfileMode'u kapattık. Onun yerine sade bir başlık.
   profileMode:
-    enabled: false
+    enabled: true
+    buttons:
+      - name: "Latest Mini Essay"
+        url: "/mini-essays/son-yazi"
   
   homeInfoParams:
-    Title: "CrichMath" # Listenin tepesindeki büyük başlık
+    Title: " Lecture Notes" # Listenin tepesindeki büyük başlık
     Content: "Undergraduate-level, student-friendly mathematics lecture notes" # Altındaki gri açıklama
 
   socialIcons: []

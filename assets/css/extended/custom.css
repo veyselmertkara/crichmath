@@ -13,8 +13,8 @@
     --code-bg: #f1f3f5;
     --border: #e9ecef;
 
-    /* Custom Accent - Bootstrap Blue 500 */
-    --accent: #0d6efd;
+    /* Custom Accent - Professional Blue */
+    --accent: #4A78A5;
 }
 
 :root[data-theme="dark"] {
@@ -29,8 +29,8 @@
     --code-bg: #212529;
     --border: #343a40;
 
-    /* Custom Accent - Bootstrap Blue 300 */
-    --accent: #6ea8fe;
+    /* Custom Accent - Professional Blue (same or slightly lighter if needed) */
+    --accent: #4A78A5;
 }
 
 /* Global Link Styling (Body) */
@@ -46,55 +46,62 @@ a:hover {
 
 /* Button & Nav Customization */
 .button {
-    background: var(--accent);
+    background: #8EC6E8 !important;
+    /* User requested color */
     color: white;
 }
 
 /* HEADER CUSTOMIZATION */
 
-/* Light Mode Header - RED Background, WHITE Text */
+/* Light Mode Header - Off-White Background, Dark Text */
 .header {
-    background: #8b0000;
-    /* Darker Red */
-    color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #F8F9FA;
+    /* Off-white */
+    color: var(--primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     /* Subtle shadow for depth */
 }
 
-/* Ensure all links in header are white */
+/* Ensure all links in header are dark */
 .header a {
-    color: white !important;
-    /* Force override accent color */
+    color: var(--primary) !important;
 }
 
 .header a:hover {
-    color: #f8f9fa !important;
-    /* Slightly off-white on hover */
+    color: var(--accent) !important;
     text-decoration: none;
     /* Clean look */
 }
 
 /* Moon/Sun Icon color fix */
 .header button {
-    color: white;
+    color: var(--primary);
 }
 
-/* Dark Mode Header - JET BLACK Background, WHITE Text */
+/* Dark Mode Header - Midnight Blue Background, WHITE Text */
 :root[data-theme="dark"] .header {
-    background: #000000;
-    /* Pure Black (darker than --theme #121212) */
+    background: #242526;
+    /* Lighter Black */
     color: white;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #3a3b3c;
 }
 
 :root[data-theme="dark"] .header a {
     color: white !important;
 }
 
+:root[data-theme="dark"] .header a:hover {
+    color: var(--accent) !important;
+}
+
+:root[data-theme="dark"] .header button {
+    color: white;
+}
+
 /* Active Menu Item Style in Header */
 .header #menu .active {
-    border-bottom: 2px solid white;
-    /* White underline for active item */
+    border-bottom: 2px solid var(--accent);
+    /* Blue underline for active item */
 }
 
 
@@ -110,7 +117,7 @@ a:hover {
 .nav {
     height: auto !important;
     min-height: var(--header-height);
-    padding: 0.5rem 0 !important;
+    padding: 3rem 0 !important;
     align-items: center !important;
     margin: 0 auto !important;
     /* Ensure centered */
@@ -231,16 +238,21 @@ a:hover {
 
 .logo a {
     padding: 0 !important;
-    margin: 0 !important;
-    display: inline !important;
+    display: flex;
+    align-items: center;
     white-space: nowrap !important;
+}
+
+.logo img {
+    margin-top: 15px;
+    /* Logoyu 15px aşağı iter */
+    display: block;
 }
 
 .nav {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    padding: 0 !important;
     margin: 0 !important;
     padding-left: 1.5em !important;
     padding-right: 10px !important;
@@ -485,7 +497,7 @@ a:hover {
         align-items: center !important;
         gap: 15px !important;
         padding: 20px 0 !important;
-        background: #8b0000;
+        background: #F8F9FA;
         /* Match header color */
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         position: absolute;
@@ -508,7 +520,7 @@ a:hover {
 
     /* Dark mode override for menu background */
     :root[data-theme="dark"] #menu {
-        background: #000000;
+        background: #242526;
     }
 }
 

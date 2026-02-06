@@ -7,6 +7,8 @@
         {{ site.Params.homeInfoParams.Content }}
     </div>
     {{- end }}
+
+
 </header>
 {{- end }}
 
@@ -18,11 +20,11 @@
 
             {{- range $targetTitle := $priorityTitles }}
             {{- range site.Taxonomies.categories.Alphabetical }}
-            {{- $name := .Name }}
-            {{- with site.GetPage (printf "/categories/%s" $name) }}
+            {{- $term := . }}
+            {{- with .Page }}
             {{- if eq .Title $targetTitle }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ len .Pages }}</sup></strong></sup></a>
+                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ $term.Count }}</sup></strong></sup></a>
             </li>
             {{- end }}
             {{- end }}
@@ -31,12 +33,13 @@
 
             {{/* 2. Other Categories */}}
             {{- range site.Taxonomies.categories.Alphabetical }}
-            {{- $name := .Name }}
-            {{- if ne $name "archive" }}
-            {{- with site.GetPage (printf "/categories/%s" $name) }}
+            {{- $term := . }}
+            {{- with .Page }}
+            {{- if ne .Title "Archive" }} {{/* Assuming 'Archive' check via Title, or use $term.Name if slug is needed
+            */}}
             {{- if not (in $priorityTitles .Title) }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ len .Pages }}</sup></strong></sup></a>
+                <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ $term.Count }}</sup></strong></sup></a>
             </li>
             {{- end }}
             {{- end }}
@@ -46,6 +49,26 @@
     </div>
 
     <aside class="contact-sidebar">
+        {{- with site.Params.profileMode.buttons }}
+        <div class="sidebar-buttons" style="margin-bottom: 20px;">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}"
+                style="display: block; width: 100%; text-align: center; padding: 10px; border-radius: 8px;">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
         <h2>Contact</h2>
         <div class="contact-content">
             <div class="contact-links">

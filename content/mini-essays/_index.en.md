@@ -1,12 +1,12 @@
 ---
 title: "Mini Essays"
-description: "Herhangi bir konu bütünlüğüne bağlı kalmadan yazılmış, genel ilgiye hitap eden yüksek kaliteli matematik denemeleri."
+description: "High-quality essays written without being tied to a specific topic, appealing to general interest."
 draft: false
 ---
 
 <div class="language-filter" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem;">
-    <a href="/en/mini-essays/" class="lang-btn" style="text-decoration: none;">English</a>
-    <a href="/mini-essays/" class="lang-btn active" style="text-decoration: none;">Turkish</a>
+    <a href="/en/mini-essays/" class="lang-btn active" style="text-decoration: none;">English</a>
+    <a href="/mini-essays/" class="lang-btn" style="text-decoration: none;">Turkish</a>
 </div>
 
 <style>
@@ -27,8 +27,6 @@ draft: false
 }
 .lang-btn.active {
     background: var(--primary);
-    color: var(--theme); /* PaperMod theme variable for background text color usually contrast */
-    color: white; /* Safe bet or var(--bg) */
+    color: white;
 }
-/* Dark mode adjustment if needed */
 </style>
