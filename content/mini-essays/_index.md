@@ -1,6 +1,6 @@
 ---
 title: "Mini Essays"
-description: "Herhangi bir konu bütünlüğüne bağlı kalmadan yazılmış, genel ilgiye hitap eden yüksek kaliteli matematik denemeleri."
+description: "High-quality essays written without being tied to a specific topic, appealing to general interest in both English and Turkish."
 draft: false
 ---
 
@@ -10,6 +10,9 @@ draft: false
 </div>
 
 <style>
+.breadcrumbs {
+    display: none !important;
+}
 .lang-btn {
     background: transparent;
     border: 2px solid var(--primary);

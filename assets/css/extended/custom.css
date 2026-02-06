@@ -565,7 +565,7 @@ a:hover {
 /* Mobile Logo Fix */
 @media (max-width: 768px) {
     .logo img {
-        max-width: 150px !important;
+        max-width: 210px !important;
         /* Scale down for mobile */
         height: auto !important;
         /* Maintain aspect ratio */

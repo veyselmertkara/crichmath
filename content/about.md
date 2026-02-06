@@ -5,6 +5,12 @@ draft: false
 hidemeta: true
 ---
 
+<style>
+.breadcrumbs {
+    display: none !important;
+}
+</style>
+
 I am Selim Kaan Özsoy from Turkey. I have been studying at Middle East Technical University (METU) since 2023. After completing two years as a Mechanical Engineering major, I started a double major in Mathematics in 2025, and I plan to begin a minor in Physics in the Spring of 2026.
 
 I have been interested in teaching and writing since high school. When I began studying mathematics and became familiar with mathematical writing, I realized how naturally clear exposition and scientific thinking come together in this field. As I explored the structure and style of mathematical texts, I gradually developed a strong interest in writing my own lecture notes.
