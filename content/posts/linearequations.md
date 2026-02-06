@@ -14,7 +14,7 @@ draft: false
 An integrating factor is a function by which an ordinary differential equation can be multiplied to make it integrable.
 
 **Definition 2.**
-In first-order linear ODEs, standard form usually means writing the equation so that the coefficient of the highest-order derivative, i.e., $y'(x)$ or $\frac{dy}{dx}$, is $1$.
+In first-order linear ODEs, standard form usually means writing the equation so that the coefficient of the highest-order derivative, i.e., $y^{\prime}(x)$ or $\frac{dy}{dx}$, is $1$.
 
 **Definition 3.**
 Let $y$ be a function of $x$ and so $x$ is an independent variable and $y$ is a dependent variable. An ordinary, first-order and linear differential equation is given by
@@ -50,22 +50,20 @@ $$\mu(x) \cdot \left(\frac{dy}{dx}\right) + \mu(x) P(x)y = \mu(x) Q(x).$$
 &emsp;Assume that the left-hand side can be expressed as $\frac{d}{dx}[\mu(x)y]$.
 Now, by the product rule, we must have
 
-$$\mu(x) \cdot \left(\frac{dy}{dx}\right) +\mu'(x)y =\mu(x) \cdot \left(\frac{dy}{dx}\right) + \mu(x)P(x)y$$
+$$\mu(x) \cdot \left(\frac{dy}{dx}\right) +\mu^{\prime}(x)y =\mu(x) \cdot \left(\frac{dy}{dx}\right) + \mu(x)P(x)y$$
 
-and so $\mu'(x)y=\mu(x)P(x)y$.  
+and so $\mu^{\prime}(x)y=\mu(x)P(x)y$.  
 &emsp;Supposing that $y \neq 0$, we can rewrite the above equation as follows:
 
-$$\frac{\mu'(x)}{\mu(x)} = P(x).$$
+$$\frac{\mu^{\prime}(x)}{\mu(x)} = P(x).$$
 
 And then, integrating both sides with respect to $x$, we get the general formula of the integrating factor as follows:
 
-$$
-\begin{aligned}
-&\int \frac{\mu'(x)}{\mu(x)}\ dx = \int P(x)\ dx \\
-&\ln{\mu(x)} = \int P(x)\ dx \quad \text{(Here, the additive constant } +C \text{ can be absorbed into } \mu \text{.)} \\
-&\mu(x)=e^{\int P(x)\ dx}.
-\end{aligned}
-$$
+$$ \int \frac{\mu^{\prime}(x)}{\mu(x)}\ dx = \int P(x)\ dx $$
+
+$$ \ln{\mu(x)} = \int P(x)\ dx \quad \text{(Here, the additive constant } +C \text{ can be absorbed into } \mu \text{.)} $$
+
+$$ \mu(x)=e^{\int P(x)\ dx}. $$
 
 &emsp;Considering the derivation, we can write a formula.  
 &emsp;**Formula.** Let a first-order linear ODE be given by
@@ -80,14 +78,14 @@ $$\mu=\mu(x)=e^{\int P(x)\ dx}.$$
 ### &emsp;<span style="color: blue">Example (1)</span>
 Consider the following first-order linear ODE and find a general solution to it using an integrating factor $\mu=\mu(t)=t^2$.
 
-$$ty'+3y=\frac{2}{t}.$$
+$$ty^{\prime}+3y=\frac{2}{t}.$$
 
 &emsp;In some problems similar to this, we are given the integrating factor and asked to use it to find a general solution, rather than finding the integrating factor manually.
 
 &emsp;**<span style="color: orange">Solution:</span>**  
 &emsp;Multiply the whole ODE by $\mu$. We have
 
-$$t^3y'+3t^2y=2t.$$
+$$t^3y^{\prime}+3t^2y=2t.$$
 
 &emsp;We can observe that, by an inspection of the product rule, the left-hand side can be rewritten as $\frac{d}{dt}[t^3y]$ and so we get
 
@@ -95,13 +93,11 @@ $$\frac{d}{dt}[t^3y] = 2t.$$
 
 &emsp;It follows from integration that
 
-$$
-\begin{aligned}
-&\int \frac{d}{dt}[t^3y]\ dt = \int 2t\ dt \\
-&t^3y = t^2 + C \\
-&y=\frac{1}{t} + \frac{C}{t^3}
-\end{aligned}
-$$
+$$ \int \frac{d}{dt}[t^3y]\ dt = \int 2t\ dt $$
+
+$$ t^3y = t^2 + C $$
+
+$$ y=\frac{1}{t} + \frac{C}{t^3} $$
 
 is the general solution.
 
@@ -127,14 +123,13 @@ $$x^2\frac{dy}{dx} + 2xy =\sin x.$$
 
 and so, by the product rule, we write
 
-$$
-\begin{aligned}
-&\frac{d}{dx}[x^2y] = \sin x \\
-&\int \frac{d}{dx}[x^2y]\ dx = \int \sin x\ dx \\
-&x^2y = -\cos x + C \\
-&y=y(x)=\frac{-\cos x}{x^2} + \frac{C}{x^2}.
-\end{aligned}
-$$
+$$ \frac{d}{dx}[x^2y] = \sin x $$
+
+$$ \int \frac{d}{dx}[x^2y]\ dx = \int \sin x\ dx $$
+
+$$ x^2y = -\cos x + C $$
+
+$$ y=y(x)=\frac{-\cos x}{x^2} + \frac{C}{x^2}. $$
 
 &emsp;Therefore, the general solution of the ODE is given by
 

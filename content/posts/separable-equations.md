@@ -54,14 +54,13 @@ $$
 
 The rest is trivial integration.
 
-$$
-\begin{aligned}
-\int\frac{1}{3y^{2}}dy &= \int x^{2}dx \\\\
--\frac{1}{3y}+C_{1} &= \frac{x^{3}}{3}+C_{2} \\\\
--\frac{1}{3y} &= \frac{x^{3}}{3}+C \\\\
-y=y(x) &= -\frac{1}{x^{3}+\tilde{C}}
-\end{aligned}
-$$
+$$ \int\frac{1}{3y^{2}}dy = \int x^{2}dx $$
+
+$$ -\frac{1}{3y}+C_{1} = \frac{x^{3}}{3}+C_{2} $$
+
+$$ -\frac{1}{3y} = \frac{x^{3}}{3}+C $$
+
+$$ y=y(x) = -\frac{1}{x^{3}+\tilde{C}} $$
 
 <br><br>
 
@@ -87,12 +86,9 @@ $$
 
 Then, we may apply integration as follows,
 
-$$
-\begin{aligned}
-\int\frac{1}{y^{2}+1}dy &= \int7(x+6)dx \\\\
-\arctan(y) &= \frac{7x^{2}}{2}+42x+C
-\end{aligned}
-$$
+$$ \int\frac{1}{y^{2}+1}dy = \int7(x+6)dx $$
+
+$$ \arctan(y) = \frac{7x^{2}}{2}+42x+C $$
 
 Here, we note that it is natural to leave $\arctan(y)$, since the transformation from $\arctan(y)$ to $y$ requires a careful analysis of the interval of $y,$ as the inverse trigonometric functions are defined on restricted intervals.
 

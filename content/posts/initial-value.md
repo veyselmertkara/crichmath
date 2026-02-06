@@ -12,7 +12,7 @@ draft: false
 
 $$
 \frac{dy}{dx}=2x, \qquad 
-y'= \arctan(x) + e^x, \qquad
+y^{\prime}= \arctan(x) + e^x, \qquad
 (2xe^x)\left(\frac{dy}{dx}\right)=\sin(\arctan(x))
 $$
 
@@ -25,13 +25,11 @@ $$
 
 and you get $x^2 + C$, where C is an arbitrary constant. How many pre-determined data, or observation, do you need to determine the value of $C$? The answer is one. Assume that you are given the fact that when you plug 2 into $x$, you get the result 4. Then, you say, with a little abuse of notation, 
 
-$$
-\begin{gathered}
-(x=2)^2 + C = 4 \\\\
-4 + C = 4 \\\\
-C=0
-\end{gathered}
-$$
+$$ (x=2)^2 + C = 4 $$
+
+$$ 4 + C = 4 $$
+
+$$ C=0 $$
 
 Therefore, we obtain the value of $C$, which means that one independent data is adequate to obtain the full solution, and so the degree of freedom is one.  
 &emsp;In first-order differential equations, there only appears the first derivative of a variable, so, in the end, the degree of freedom of the differential equation is one. In general, it can be underlined that the degree of freedom of the solution of a differential equation is the same as its order.
@@ -41,10 +39,10 @@ Therefore, we obtain the value of $C$, which means that one independent data is 
 It is better to start with an example.
 
 $$
-y'=2x^2y, \qquad  y(0)=1.
+y^{\prime}=2x^2y, \qquad  y(0)=1.
 $$
 
-Here, we know that $y'=2x^2y$ is an ordinary differential equation, furthermore, it is a first-order equation, whose degree of freedom is one. $y(0)=1$ is called the initial condition. Together, it is called an <span style="color: blue">Initial Value Problem</span>.  
+Here, we know that $y^{\prime}=2x^2y$ is an ordinary differential equation, furthermore, it is a first-order equation, whose degree of freedom is one. $y(0)=1$ is called the initial condition. Together, it is called an <span style="color: blue">Initial Value Problem</span>.  
 &emsp;These type of problems ask us to solve the differential equation first, and then, plugging in the values $x=0$ and $y=1$ simultaneously, to compute the value of the constant, and finally, have the solution of the initial value problem.
 
 <br>
@@ -56,31 +54,29 @@ Here, we know that $y'=2x^2y$ is an ordinary differential equation, furthermore,
 &emsp;<span style="color: blue">Example(1)</span> Solve the IVP given by
 
 $$
-y'=2x^2y, \qquad y(0)=1
+y^{\prime}=2x^2y, \qquad y(0)=1
 $$
 
 <span style="color: orange">Solution: </span> We first solve the equation and obtain a general solution as follows:
 
-$$
-\begin{aligned}
-\frac{dy}{dx} &= 2x^2y \\\\
-\frac{1}{y}dy &= 2x^2dx \\\\
-\int \frac{1}{y}\ dy &= \int 2x^2\ dx \\\\
-\ln \lvert y \rvert &= \frac{2x^3}{3} + C \\\\
-\lvert y \rvert &= \tilde{C} \cdot e^{\left(\frac{2x^3}{3}\right)}
-\end{aligned}
-$$
+$$ \frac{dy}{dx} = 2x^2y $$
+
+$$ \frac{1}{y}dy = 2x^2dx $$
+
+$$ \int \frac{1}{y}\ dy = \int 2x^2\ dx $$
+
+$$ \ln \lvert y \rvert = \frac{2x^3}{3} + C $$
+
+$$ \lvert y \rvert = \tilde{C} \cdot e^{\left(\frac{2x^3}{3}\right)} $$
 
 We emphasize the transformation from $e^C$ to $\tilde{C}$, since both are arbitrary constants.
 Now, we have obtained a general solution. It follows from plugging in the initial condition that
 
-$$
-\begin{aligned}
-\lvert 1 \rvert &= \tilde{C} \cdot e^0 \\\\
-1 &= \tilde{C} \cdot 1 \\\\
-1 &= \tilde{C}
-\end{aligned}
-$$
+$$ \lvert 1 \rvert = \tilde{C} \cdot e^0 $$
+
+$$ 1 = \tilde{C} \cdot 1 $$
+
+$$ 1 = \tilde{C} $$
 
 Therefore, the solution of the IVP is given by
 
@@ -93,30 +89,28 @@ $$
 &emsp;<span style="color: blue">Example(2)</span> Solve the IVP given by
 
 $$
-y' = \frac{(1+y^2)(1+x^2)}{xy}, \qquad y(1)=1, \qquad x>0
+y^{\prime} = \frac{(1+y^2)(1+x^2)}{xy}, \qquad y(1)=1, \qquad x>0
 $$
 
 <span style="color: orange">Solution: </span> We can straightforwardly observe that we are also given the condition $x>0$. It is common to assume that, therefore, we may end up with an expression where $\ln(x)$ appears. However, this observation does not affect our method to solve the problem. Similarly, we first solve the equation and obtain a general solution, and then, by plugging in the initial condition, get the solution of the IVP.
 
-$$
-\begin{aligned}
-\frac{dy}{dx} &= \frac{(1+y^2)(1+x^2)}{xy} \\\\
-\left(\frac{y}{1+y^2}\right)dy &= \left(\frac{1}{x} + x \right)dx \\\\
-\int \left(\frac{y}{1+y^2}\right)\ dy &= \int \left(\frac{1}{x} + x \right)\ dx \\\\
-\frac{\ln(1+y^2)}{2} &= \ln(x) + \frac{x^2}{2} + C
-\end{aligned}
-$$
+$$ \frac{dy}{dx} = \frac{(1+y^2)(1+x^2)}{xy} $$
+
+$$ \left(\frac{y}{1+y^2}\right)dy = \left(\frac{1}{x} + x \right)dx $$
+
+$$ \int \left(\frac{y}{1+y^2}\right)\ dy = \int \left(\frac{1}{x} + x \right)\ dx $$
+
+$$ \frac{\ln(1+y^2)}{2} = \ln(x) + \frac{x^2}{2} + C $$
 
 &emsp;Now, we have the general solution. We, then, consider the initial condition, by plugging in $y=1$ and $x=1$:
 
-$$
-\begin{aligned}
-\frac{\ln(1+1)}{2} &= \ln(1) + \frac{1^2}{2} + C\\\\
-\frac{\ln(2)}{2} &= \frac{1}{2} + C\\\\
-\frac{\ln(2)-1}{2} &= C \\\\
-\ln\left(\sqrt{\frac{2}{e}}\right) &= C
-\end{aligned}
-$$
+$$ \frac{\ln(1+1)}{2} = \ln(1) + \frac{1^2}{2} + C $$
+
+$$ \frac{\ln(2)}{2} = \frac{1}{2} + C $$
+
+$$ \frac{\ln(2)-1}{2} = C $$
+
+$$ \ln\left(\sqrt{\frac{2}{e}}\right) = C $$
 
 &emsp;Therefore, we conclude that the solution of the IVP is given by the implicit equation
 

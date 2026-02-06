@@ -32,14 +32,13 @@ $$
 
 &emsp;<span style="color: blue">Example:</span> Prove that $2+2=4$.
 
-$$
-\begin{aligned}
-2+2 &= S(S(0)) + S(S(0)) \\\\
-&= S(S(S(0) + S(0))) \\\\
-&= S(S(S(S(0)))) \\\\
-&= 4.
-\end{aligned}
-$$
+$$ 2+2 = S(S(0)) + S(S(0)) $$
+
+$$ = S(S(S(0) + S(0))) $$
+
+$$ = S(S(S(S(0)))) $$
+
+$$ = 4. $$
 
 <br>
 
@@ -95,14 +94,13 @@ This assumption is called the Induction Hypothesis or Induction Assumption.
 &emsp;Now, we wish to show that the statement is also true for, then, $k+1$.  
 &emsp;By induction hypothesis, we have
 
-$$
-\begin{aligned}
-1+2+3+4+ \dots + k + (k+1) &= \frac{k(k+1)}{2} + (k+1) \\\\
-&= \frac{k(k+1)+2(k+1)}{2} \\\\
-&=\frac{(k+1)\cdot(k+2)}{2} \\\\
-&=\frac{(k+1)\cdot(k+1+1)}{2}
-\end{aligned}
-$$
+$$ 1+2+3+4+ \dots + k + (k+1) = \frac{k(k+1)}{2} + (k+1) $$
+
+$$ = \frac{k(k+1)+2(k+1)}{2} $$
+
+$$ =\frac{(k+1)\cdot(k+2)}{2} $$
+
+$$ =\frac{(k+1)\cdot(k+1+1)}{2} $$
 
 Therefore, by PMI(Principle of Mathematical Induction), for all $n \in \mathbb{N}$,
 
@@ -141,15 +139,15 @@ $$
 &emsp;We wish to show that the statement is also true for $k+1$.  
 &emsp;Now, by induction hypothesis, we have
 
-$$
-\begin{aligned}
-2^{k+1} & \geq 2^k \cdot 2 \\\\
-& \geq 2(k+1) \\\\
-& \geq 2k + 2 =k + (k+2) \\\\
-& \geq k+2 \\\\
-& \geq (k+1) + 1.
-\end{aligned}
-$$
+$$ 2^{k+1} \geq 2^k \cdot 2 $$
+
+$$ \geq 2(k+1) $$
+
+$$ \geq 2k + 2 =k + (k+2) $$
+
+$$ \geq k+2 $$
+
+$$ \geq (k+1) + 1. $$
 
 Therefore, by PMI(Principle of Mathematical Induction), for all $n \in \mathbb{N}$,
 
@@ -192,12 +190,9 @@ $$
 &emsp;We wish to show that the statement is also true for $k+1$.  
 &emsp;By induction hypothesis, we have
 
-$$
-\begin{aligned}
-2^{k+1} &= 2^k \cdot 2 \\\\
- &> 2 \cdot k^2.
-\end{aligned}
-$$
+$$ 2^{k+1} = 2^k \cdot 2 $$
+
+$$ > 2 \cdot k^2. $$
 
 Here, we can observe that $2 \cdot k^2 > (k+1)^2$, since $2 \cdot k^2=k^2 + k^2$ and $(k+1)^2=k^2+2k+1$ and $k^2>2k+1$, as $k^2-2k=k(k-2) >1$, since $k \geq 5$ and therefore $k,(k-2)>1$.  
 &emsp;It follows that

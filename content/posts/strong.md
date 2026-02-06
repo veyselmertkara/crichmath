@@ -19,13 +19,11 @@ then, $S=\mathbb{N}$.
 
 &emsp;<span style="color: blue">Example:</span> Given integer $n \geq 0$, define $a_n$ recursively as follows:
 
-$$
-\begin{aligned}
-a_0&=1, \\\\
-a_1&=3, \\\\
-a_n&=2a_{n-1} - a_{n-2} \quad \text{for $n \geq 2$}
-\end{aligned}
-$$
+$$ a_0=1, $$
+
+$$ a_1=3, $$
+
+$$ a_n=2a_{n-1} - a_{n-2} \quad \text{for $n \geq 2$} $$
 
 Show that for all $n \geq 0$, $a_n=2n+1.$
 
@@ -34,16 +32,17 @@ Show that for all $n \geq 0$, $a_n=2n+1.$
 &emsp;We will solve the problem by Strong Mathematical Induction.  
 &emsp;Firstly, we can straightforwardly see that the statement is true, since
 
-$$
-\begin{aligned}
-&a_0=1=2 \cdot 0 +1 \\\\
-&a_1=3=2 \cdot 1 +1\\\\
-&a_2=2 \cdot a_1 - a_0 = 5 = 2 \cdot 2 +1 \\\\
-&a_3=2 \cdot a_2 - a_1 = 7 = 2 \cdot 3 + 1 \\\\
-&\vdots \\\\
-&a_n=2n+1
-\end{aligned}
-$$
+$$ a_0=1=2 \cdot 0 +1 $$
+
+$$ a_1=3=2 \cdot 1 +1 $$
+
+$$ a_2=2 \cdot a_1 - a_0 = 5 = 2 \cdot 2 +1 $$
+
+$$ a_3=2 \cdot a_2 - a_1 = 7 = 2 \cdot 3 + 1 $$
+
+$$ \vdots $$
+
+$$ a_n=2n+1 $$
 
 Proof by Induction(Strong Induction):  
 &emsp;**Induction Basis:**

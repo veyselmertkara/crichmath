@@ -50,7 +50,13 @@ $$ f(x,y)=\\frac\{x-y\}\{x+y\}. $$
 
 It follows that, for some $\\lambda \\neq 0$,
 
-$$ \\begin\{aligned\} f(\\lambda x, \\lambda y) &= \\frac\{\\lambda x - \\lambda y\}\{\\lambda x + \\lambda y\} \\\\ &= \\frac\{\\lambda(x-y)\}\{\\lambda(x+y)\} \\\\ &= \\frac\{x-y\}\{x+y\} \\\\ &= f(x,y). \\end\{aligned\} $$
+$$ f(\lambda x, \lambda y) = \frac{\lambda x - \lambda y}{\lambda x + \lambda y} $$
+
+$$ = \frac{\lambda(x-y)}{\lambda(x+y)} $$
+
+$$ = \frac{x-y}{x+y} $$
+
+$$ = f(x,y). $$
 
 Therefore, the ODE is homogeneous.
 
@@ -74,7 +80,13 @@ $$ f(x, y)=\\frac\{dy\}\{dx\}=\\frac\{3x+y\}\{x-y\}. $$
 
 Observe that, for some $\\lambda \\neq 0$,
 
-$$ \\begin\{aligned\} f(\\lambda x, \\lambda y) &= \\frac\{3 \\lambda x + \\lambda y \}\{\\lambda x - \\lambda y\}  \\\\ &= \\frac\{\\lambda(3x + y)\}\{\\lambda(x-y)\} \\\\ &=\\frac\{(3x + y)\}\{(x-y)\} \\\\ &= f(x,y). \\end\{aligned\} $$
+$$ f(\lambda x, \lambda y) = \frac{3 \lambda x + \lambda y }{\lambda x - \lambda y} $$
+
+$$ = \frac{\lambda(3x + y)}{\lambda(x-y)} $$
+
+$$ =\frac{(3x + y)}{(x-y)} $$
+
+$$ = f(x,y). $$
 
 Therefore, the ODE is homogeneous. We can apply an algebraic operation to notice that, for ease, by dividing the nominator and denominator by y, assuming $y \\neq 0$,
 
@@ -86,15 +98,25 @@ $$ u = \\frac\{y\}\{x\} $$
 
 Then,
 
-$$ \\begin\{aligned\} &y = ux \\\\ &\\frac\{dy\}\{dx\} = u + x \\cdot \\frac\{du\}\{dx\}   \\quad \\text\{(We point out the use of chain rule.)\} \\end\{aligned\} $$
+$$ y = ux $$
+
+$$ \frac{dy}{dx} = u + x \cdot \frac{du}{dx}   \quad \text{(We point out the use of chain rule.)} $$
 
 Here, it is quite important to note that $u$ is a function of $y$ and $x$, where $y$ is also a function of $x$. Hence, it suffices to consider $u$ as a function of $x$. So, we will not use partial derivatives, which may come into the reader's mind at first glance, since there may be an attempt to think $u$ as $u=\\frac\{y\}\{x\}=g(x,y)$ for some function $g$.<br>  Now, it follows that, by plugging in,
 
-$$ \\begin\{aligned\} u + x \\cdot \\frac\{du\}\{dx\} &= \\frac\{\\frac\{3\}\{u\}+1\}\{\\frac\{1\}\{u\}-1\} \\\\ &= \\frac\{3+u\}\{1-u\} \\end\{aligned\} $$
+$$ u + x \cdot \frac{du}{dx} = \frac{\frac{3}{u}+1}{\frac{1}{u}-1} $$
+
+$$ = \frac{3+u}{1-u} $$
 
 and so,
 
-$$ \\begin\{aligned\} x \\cdot \\frac\{du\}\{dx\} &= \\frac\{3+u^2\}\{1-u\} \\quad \\text\{, which is a separable equation.\} \\\\ \\int\\frac\{1-u\}\{3+u^2\}\\ du &= \\int 1\\ dx \\\\ \\int \\frac\{1\}\{u^2+ 3\}\\ du - \\int \\frac\{u\}\{u^2+3\}\\ du &=\\int 1\\ dx \\\\ \\frac\{1\}\{\\sqrt\{3\}\}\\arctan\\left(\\frac\{u\}\{\\sqrt\{3\}\}\\right) - \\frac\{1\}\{2\}\\ln\\left(u^2+3\\right) &= x + C . \\end\{aligned\} $$
+$$ x \cdot \frac{du}{dx} = \frac{3+u^2}{1-u} \quad \text{, which is a separable equation.} $$
+
+$$ \int\frac{1-u}{3+u^2}\ du = \int 1\ dx $$
+
+$$ \int \frac{1}{u^2+ 3}\ du - \int \frac{u}{u^2+3}\ du =\int 1\ dx $$
+
+$$ \frac{1}{\sqrt{3}}\arctan\left(\frac{u}{\sqrt{3}}\right) - \frac{1}{2}\ln\left(u^2+3\right) = x + C . $$
 
 Finally, using back-substitution, and leaving the equation in explicit form, we obtain the following:
 
@@ -132,7 +154,15 @@ $$ \\frac\{dy\}\{dx\}= u  + x \\cdot \\frac\{du\}\{dx\} $$
 
 Then, by plugging in,
 
-$$ \\begin\{aligned\} u  + x \\cdot \\frac\{du\}\{dx\} &= 1 + u \\\\ x \\cdot \\frac\{du\}\{dx\} &= 1 \\\\ du &= \\frac\{1\}\{x\}dx \\\\ \\int1\\  du &= \\int \\frac\{1\}\{x\}\\ dx \\\\ u &= \\ln\\lvert x\\rvert + C \\end\{aligned\} $$
+$$ u  + x \cdot \frac{du}{dx} = 1 + u $$
+
+$$ x \cdot \frac{du}{dx} = 1 $$
+
+$$ du = \frac{1}{x}dx $$
+
+$$ \int1\  du = \int \frac{1}{x}\ dx $$
+
+$$ u = \ln\lvert x\rvert + C $$
 
 Using back-substitution and noticing that $x&gt;0$, we have:
 
@@ -144,7 +174,11 @@ $$ y=y(x)=x \\ln x+ Cx $$
 
 is the general solution. Now, we will solve the IVP, considering the initial condition.
 
-$$ \\begin\{aligned\} y(1)=\\ln 1 + C &= 2 \\\\ 0 + C &= 2 \\\\ C &= 2 \\end\{aligned\} $$
+$$ y(1)=\ln 1 + C = 2 $$
+
+$$ 0 + C = 2 $$
+
+$$ C = 2 $$
 
 Therefore, the solution of the IVP is
 
