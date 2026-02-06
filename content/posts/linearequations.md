@@ -76,7 +76,6 @@ $$\frac{dy}{dx} +  P(x)y = Q(x).$$
 
 $$\mu=\mu(x)=e^{\int P(x)\ dx}.$$
 
----
 
 ### &emsp;<span style="color: blue">Example (1)</span>
 Consider the following first-order linear ODE and find a general solution to it using an integrating factor $\mu=\mu(t)=t^2$.
@@ -106,7 +105,6 @@ $$
 
 is the general solution.
 
----
 
 ### &emsp;<span style="color: blue">Example (2)</span>
 Consider the following first-order linear ODE and find a solution to the IVP
