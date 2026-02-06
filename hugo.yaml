@@ -34,7 +34,7 @@ params:
     enabled: true
     buttons:
       - name: "Latest Mini Essay"
-        url: "/mini-essays/son-yazi"
+        url: "/mini-essays/irrationality-of-sqrt2/"
   
   homeInfoParams:
     Title: " Lecture Notes" # Listenin tepesindeki büyük başlık
