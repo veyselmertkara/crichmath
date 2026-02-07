@@ -819,8 +819,12 @@ body {
         font-size: 0.7rem;
         padding: 0 8px;
         height: 28px;
-        max-width: 100px;
-        /* Compress label to fit buttons */
+        max-width: 100%;
+        /* Let it fill available space */
+        flex: 1;
+        /* Allow it to shrink/grow */
+        min-width: 0;
+        /* Enable shrinking below content size */
         margin: 0;
         overflow: hidden;
         text-overflow: ellipsis;
