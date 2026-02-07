@@ -15,7 +15,8 @@
             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 18l-6-6 6-6" />
         </svg>
-        <span>Prev. Section</span>
+        <span class="desktop-text">Prev. Section</span>
+        <span class="mobile-text">Prev.</span>
     </a>
     {{- else }}
     <div class="nav-placeholder"></div>
@@ -27,7 +28,8 @@
 
     {{- with $pages.Next . }}
     <a class="nav-next" href="{{ .Permalink }}">
-        <span>Next Section</span>
+        <span class="desktop-text">Next Section</span>
+        <span class="mobile-text">Next</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 18l6-6-6-6" />

@@ -786,54 +786,68 @@ body {
     padding-bottom: 0 !important;
 }
 
+/* Responsive Text Logic */
+.mobile-text {
+    display: none;
+}
+
+.desktop-text {
+    display: inline;
+}
+
 @media (max-width: 768px) {
+    .mobile-text {
+        display: inline;
+    }
+
+    .desktop-text {
+        display: none;
+    }
+
     .paginav {
         flex-direction: row;
-        /* Force single line */
-        gap: 6px;
+        /* Single line */
+        gap: 5px;
         margin-top: 30px;
         margin-bottom: 60px;
         justify-content: space-between;
-        padding-top: 10px;
+        padding: 10px 0;
         border-top: none;
     }
 
     .nav-label {
-        order: 0;
+        font-size: 0.7rem;
+        padding: 0 8px;
+        height: 28px;
+        max-width: 100px;
+        /* Compress label to fit buttons */
         margin: 0;
-        font-size: 0.75rem;
-        padding: 0 12px;
-        height: 32px;
-        max-width: 140px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
     .paginav a {
-        width: 40px;
-        /* Square-ish for icon */
-        height: 40px;
-        padding: 0;
-        justify-content: center;
-        border-radius: 50%;
-        /* Circle buttons on mobile look clean */
-    }
-
-    /* Hide text labels on mobile, keep icons */
-    .paginav a span {
-        display: none;
+        width: auto;
+        /* Allow growth for text */
+        height: 32px;
+        /* Compact height */
+        padding: 0 10px;
+        border-radius: 99px;
+        gap: 4px;
+        font-size: 0.75rem;
+        /* Smaller font */
     }
 
     .paginav a svg {
+        width: 14px;
+        height: 14px;
         margin: 0;
-        width: 20px;
-        height: 20px;
     }
 
     .nav-placeholder {
         display: block;
-        /* Restore placeholders to keep centering if one button missing */
-        width: 40px;
+        width: 60px;
+        /* Approximate width of compact button */
     }
 }
