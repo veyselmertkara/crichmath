@@ -170,3 +170,5 @@ $$
 Here, we observe that as $a,b,c,d \in \mathbb{Z}$, the terms $(cb-da)$ and $(db)$ are in $\mathbb{Z}$, and $(b \neq 0 \land d \neq 0) \implies db \neq 0$. 
 
 Therefore, by the definition of rational numbers, we get that $k$ is rational. This contradicts the assumption that $k$ is irrational. $\square$
+
+{{< pdf "Proof_Examples.pdf">}}
