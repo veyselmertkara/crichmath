@@ -244,13 +244,13 @@ $$
 If the right-hand side is a function of $x$ only, then integrating with respect to $x$ gives
 
 $$
-\ln \mu(x) = \int \frac{1}{N} \left( \frac{\partial M}{\partial y} - \frac{\partial N}{\partial x} \right) \, dx,
+\ln \mu(x) = \int \frac{1}{N} \left( \frac{\partial M}{\partial y} - \frac{\partial N}{\partial x} \right) \ dx,
 $$
 
 and hence
 
 $$
-\mu(x) = \exp\!\left( \int \frac{1}{N} \left( \frac{\partial M}{\partial y} - \frac{\partial N}{\partial x} \right) \, dx \right).
+\mu(x) = \exp\ \left( \int \frac{1}{N} \left( \frac{\partial M}{\partial y} - \frac{\partial N}{\partial x} \right) \ dx \right).
 $$
 
 **Integrating Factor Depending Only on $y$.**
@@ -263,7 +263,7 @@ $$
 If the right-hand side depends only on $y$, integrating yields
 
 $$
-\mu(y) = \exp\!\left( \int \frac{1}{M} \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) \, dy \right).
+\mu(y) = \exp\ \left( \int \frac{1}{M} \left( \frac{\partial N}{\partial x} - \frac{\partial M}{\partial y} \right) \ dy \right).
 $$
 
 **Remark.**
